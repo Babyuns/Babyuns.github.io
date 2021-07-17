@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: palegreen;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: seagreen;
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 2px rgba(0,0,0,0.3);
+}
+
+.title {
+    width: 100%;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+.img-link {
+    width: calc(50% - 20px);
+    max-width: 480px;
+    height:calc(95vw / 2 / 16 * 9);
+    max-height: 265px;
+    background-color: olivedrab;
+    margin: 10px;
+
+    opacity: 0.80;
+    transition: 0.7s ease-in-out, transform 0.5s ease, box-shadow 0.7s ease-out;
+    filter: brightness(0.3) blur(4px) grayscale(50%);
+}
+
+.img-link:hover {
+    
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 0 200px 30px rgba(0,0,0,0.3);
+    filter: brightness(1) blur(0) grayscale(0);
+}
+
+.img-link:nth-of-type(even):hover{
+    transform: scale(1.2) rotate(6deg);
+}
+
+.img-link:nth-of-type(odd):hover{
+    transform: scale(1.2) rotate(-4deg);
+}
+
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+
+.item1 {
+    background: url(./images/1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.item2 {
+    background: url(./images/2.jpg);
+    background-position: 1% 80%;
+    background-size: cover;
+}
+
+.item3 {
+    background: url(./images/3.jpg);
+    background-position: 1% 80%;
+    background-size: cover;
+}
+@media all and (max-width: 1200px) {
+.img-link:hover {
+    
+    
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 0 200px 30px rgba(0,0,0,0.3);
+    filter: brightness(1) blur(0) grayscale(0);
+}
+
+@media all and (max-width: 500px) {
+    .img-link {
+        width: 90%;
+        height: calc(95vw / 16 *9);
+        margin: 10px auto;
+    }
+}

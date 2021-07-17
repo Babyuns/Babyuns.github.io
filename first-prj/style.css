@@ -1,0 +1,51 @@
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: rgb(228, 228, 228);
+}
+h2 {
+    color:blueviolet;    
+    font-size:30px;
+}
+
+h1{
+    color: darkorange;
+    font-size: 50px;
+    text-align: center;
+}
+
+img{
+   width: 1440px;
+   height: 700px;
+
+   display:block;
+   margin: auto;
+}
+
+p{
+  color: rgb(101, 32, 230);
+  font-size: x-large;
+  display: block;
+  width: 350px;
+  margin: auto;
+}
+
+.green-text {
+  color:forestgreen
+}
+
+.grey-text {
+  color:grey
+}
+
+a{
+  color: rgb(201, 14, 14);
+  font-size: x-large;
+  display: block;
+  width: 350px;
+  margin: auto;
+}
+
+a:hover {
+  color:orangered;
+  border-color:rgb(201, 14, 14)
+}
